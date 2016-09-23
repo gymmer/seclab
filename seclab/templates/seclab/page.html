@@ -1,0 +1,56 @@
+{% extends "seclab/base.html" %}
+
+{% block content %}
+<div class="page-title-container">
+	{% for fmenu in father_menu %}
+		{% if fmenu.slug == request.path %}
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-xs-6">
+				<div class="page-title">
+					{{ fmenu.title}}
+				</div>				
+			</div>
+
+			<div class="col-md-6 col-sm-6 col-xs-6">
+				<ol class="breadcrumb pull-right">
+					您的位置&nbsp;：
+					<li> <a href="/seclab/">首页</a></li>
+					<li class="active"> {{fmenu.title}} </li>
+				</ol>	
+			</div>
+		</div>
+		{% endif %}
+	{% endfor %}
+
+	{% for smenu in son_menu %}
+		{% if smenu.slug == request.path %}
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-xs-6">
+				<div class="page-title">
+					{{ smenu.title}}
+				</div>
+			</div>
+			
+			{% for fmenu in father_menu %}
+				{% if fmenu.pk == smenu.father_id %}
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<ol class="breadcrumb pull-right">
+							您的位置&nbsp;：
+							<li> <a href="/seclab/">首页</a></li>
+							<li> {{fmenu.title}}</li>
+							<li class="active"> {{smenu.title}} </li>
+						</ol>
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+		{% endif %}
+	{% endfor %}
+</div>
+
+<div class="jumbotron">
+	{% block page_content %}
+	这是一个静态页面	
+	{% endblock page_content %}
+</div>
+{% endblock %}

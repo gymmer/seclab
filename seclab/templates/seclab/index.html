@@ -1,0 +1,90 @@
+{% extends "seclab/base.html" %}
+{% block content %}
+	<div class="carousel slide" id="homeSlider" data-ride="carousel" data-interval="3000">
+		<!-- 轮播（Carousel）指标 -->
+		<ol class="carousel-indicators">
+			{% for img in slide_img %}
+				<li class='img_{{img.tagId}}'data-target="#homeSlider" data-slide-to="{{img.tagId}}"></li>	
+			{% endfor %}
+		</ol>   
+		<!-- 轮播（Carousel）项目 -->
+		<div class="carousel-inner">
+			{% for img in slide_img %}	
+				<div class='img_{{img.tagId}} item'style="background:url('{{img.slug}}'); background-size:cover;">
+				    <img class="img-responsive" src="/static/img/blank_slider.png" alt="{{img.title}}">
+				    <div class="carousel-caption">
+				     	<span class="slider-title">{{ img.title }}</span>
+			     	</div>
+		    	</div>										
+			{% endfor %}			
+		</div>
+		<!-- 轮播（Carousel）导航 -->
+		<span class="carousel-control left">
+			<a class="control-box left-box" href="#homeSlider" data-slide="prev">
+				<span class="control-arrow">&lsaquo;</span>
+			</a class="control-box">
+		</span>
+		<span class="carousel-control right">
+			<a class="control-box right-box" href="#homeSlider" data-slide="next">
+				<span class="control-arrow">&rsaquo;</span>
+			</a>
+		</span>		
+	</div>
+	{# <img class="img-responsive center-block" src="{{lab_name.slug}}" alt="{{ lab_name.title }}" style="margin:10px auto;"> #}
+	<div class="jumbotron">
+	<div class="container">
+		<h2>信息处理与信息安全研究中心</h2><br>
+		<p><small>研究信息传输过程中的保密性、完整性、可用性和可控性</small></p>
+		<div class="unity-separator"></div>
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-4">
+				<div class="home-intro-box animate-div">
+					<div class="home-intro-title">
+						<span class="glyphicon glyphicon-magnet"></span>&nbsp;团队定位
+					</div>											
+					<ul class="home-intro-list">
+						<li><span class="glyphicon glyphicon-arrow-right "><span>&nbsp;安全加密算法</li>
+						<li><span class="glyphicon glyphicon-arrow-right"><span>&nbsp;信息对抗技术</li>
+						<li><span class="glyphicon glyphicon-arrow-right"><span>&nbsp;网络信息安全平台</li>
+					</ul>	
+				</div>								
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-4">
+				<div class="home-intro-box animate-div">
+					<div class="home-intro-title">
+						<span class="glyphicon glyphicon-book">&nbsp;研究方向</span>
+					</div>
+					<ul class="home-intro-list">
+						<li><span class="glyphicon glyphicon-arrow-right"><span>&nbsp;信息安全</li>
+						<li><span class="glyphicon glyphicon-arrow-right"><span>&nbsp;电子系统设计与测控</li>
+						<li><span class="glyphicon glyphicon-arrow-right"><span>&nbsp;<a href="/seclab/direction/">了解更多&nbsp;>></a></li>
+					</ul>					
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-4">
+				<div class="home-intro-box animate-div">
+					<div class="home-intro-title">
+						<span class="glyphicon glyphicon-envelope"></span>&nbsp;联系方式
+					</div>
+					<ul class="home-intro-list">
+						<li><span class="glyphicon glyphicon-arrow-right"><span>&nbsp;北京市海淀区新街口外大街19号电子楼402</li>
+						<li><span class="glyphicon glyphicon-arrow-right"><span>&nbsp;邮编：100875</li>
+					</ul>					
+				</div>
+			</div>
+		</div>	
+	</div>
+	</div>
+	<script type="text/javascript">
+		$('.img_0').addClass('active')
+		$('#homeSlider').hover(
+			function()
+			{
+				$('.carousel-control').fadeIn('fast')
+			},
+			function()
+			{
+				$('.carousel-control').fadeOut('fast')
+			})
+	</script>
+{% endblock content %}

@@ -1,0 +1,30 @@
+<nav class="navbar navbar-default center-block" role="navigation" >
+	<div class="navbar-header">
+		<img class="img-responsive" src="{{nav_logo.slug}}" alt="{{nav_logo.title}}" style="margin:10px">
+	</div>
+
+	<div>
+		<ul class="nav navbar-nav pull-right">
+		<br><br>
+			{% for fmenu in father_menu %}
+				<li class='fmenu has_son_{{fmenu.son}}'>
+					<a href="{{ fmenu.slug }}" >
+						{{fmenu.title}}
+					</a>
+					
+					<ul class="dropdown-menu">
+						{% for smenu in son_menu %}
+							{% if smenu.father_id == fmenu.pk %}
+								<li>
+									<a href="{{ smenu.slug }}">
+										{{smenu.title}}
+									</a>
+								</li>
+							{% endif %}
+						{% endfor %}
+					</ul>					
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</nav>

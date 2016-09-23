@@ -1,0 +1,109 @@
+/*导航菜单->下拉菜单*/
+.dropdown-menu li a
+{
+	padding: 10px 0 0 15px;
+	height: 40px;
+	font-size: 15px;
+}
+/*首页->滑动图片->左右箭头指示器*/
+.control-box
+{
+	position:absolute;
+	top: 50%;
+	width:50px;
+	height: 50px;
+	background-color: #000000;
+}
+.left-box
+{
+	
+	left:25%;
+}
+.right-box
+{
+	
+	right:25%;
+}
+.control-arrow
+{
+	font-size:70px;
+	color:#FFFFFF;
+	position:absolute;
+	top: -60%;
+	left: 30%;
+}
+/*首页->滑动图片->标题*/
+.slider-title
+{
+	font-size: 25px;
+	background-color: rgba(0,0,0,.6);
+	margin: 0;
+	padding: 10px;
+}
+/* 分割线 */
+.unity-separator {
+    width: 100%;
+    height: 2px;
+    background: #d9e0e3;
+    -webkit-box-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.75 );
+    -moz-box-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.75 );
+    box-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.75 );
+    margin-bottom: 30px;
+}
+/* 首页的3个box*/
+.home-intro-box{
+	background-color: #e7e7e7;
+	height:200px;
+	border: 1px solid #EFEFEF; 
+	border-bottom: 6px solid #DDD;
+	border-radius: 0.8em;
+}
+.home-intro-title{
+	margin: 15px 25%;				
+	font-size: 25px;
+	font-weight:bold;
+}
+.home-intro-list{
+	padding: 0 40px;
+	list-style: none;
+	font-size: 18px;
+	line-height: 35px;				
+}
+.home-intro-list li{
+	border-bottom: 1px dotted #BBB;
+}
+.animate-div{
+	transform:rotate(0deg);
+	transition:transform 0.8s;
+	-moz-transition:transform, 0.8s; /* Firefox 4 */
+	-webkit-transition:transform 0.8s; /* Safari and Chrome */
+	-o-transition:transform 0.8s; /* Opera */
+}
+.animate-div:hover
+{
+	transform:rotate(360deg);
+}
+/* 每个静态页面的标题栏 */
+.page-title-container{
+	padding: 30px 0px;
+	margin:0px 0px 20px 0px;
+	background-color: #f5f5f5;
+	height: 90px;
+}
+.page-title{
+	font-size: 25px;
+	font-weight: bold;
+	margin: 0px 30px;
+}
+/* 静态页面panel的格式 */
+.my-panel-header{
+	font-size: 20px;
+	margin: 10px 0px;
+	font-weight: 700;
+	position:relative;
+}
+.my-panel-content{
+	font-size: 18px;
+	margin: 30px;
+	line-height: 30px;
+}

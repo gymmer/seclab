@@ -1,0 +1,41 @@
+{% extends "seclab/page.html" %}
+
+{% block page_content %}
+<div class="panel-group" id="teaching-accordion">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="my-panel-header">
+				<a href="#teaching-accordion-1" data-toggle="collapse">开设的本科课程</a>
+			</div>
+		</div>
+		<div id="teaching-accordion-1" class="panel-collapse collapse in">
+			<div class="panel-body">
+				<div class="my-panel-content">
+					<ul class="home-intro-list">
+						<li><span class="glyphicon glyphicon-arrow-right"><span>&nbsp;信息网络技术</li>
+						<li><span class="glyphicon glyphicon-arrow-right"><span>&nbsp;大学英语</li>
+					</ul>
+				</div>				
+			</div>
+		</div>
+	</div>
+	
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="my-panel-header">
+				<a href="#teaching-accordion-2" data-toggle="collapse">开设的研究生课程</a>
+			</div>			
+		</div>
+		<div id="teaching-accordion-2" class="panel-collapse collapse in">
+			<div class="panel-body">				
+				<div class="my-panel-content">
+					<ul class="home-intro-list">
+						<li><span class="glyphicon glyphicon-arrow-right"><span>&nbsp;现代信息安全科技</li>
+					</ul>				
+				</div>			
+			</div>
+		</div>
+	</div>
+
+</div>
+{% endblock page_content %}
