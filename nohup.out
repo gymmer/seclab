@@ -1,0 +1,529 @@
+Error: That port is already in use.
+[30/Sep/2016 04:34:09] "GET / HTTP/1.1" 200 9101
+[30/Sep/2016 04:34:09] "GET /static/css/customer.css HTTP/1.1" 200 1953
+[30/Sep/2016 04:34:09] "GET /static/js/customer.js HTTP/1.1" 200 755
+[30/Sep/2016 04:34:09] "GET /static/img/BNU-logo.png HTTP/1.1" 200 10440
+[30/Sep/2016 04:34:09] "GET /static/img/blank_slider.png HTTP/1.1" 200 1991
+[30/Sep/2016 04:34:09] "GET /static/img/slide1.jpg HTTP/1.1" 200 400502
+[30/Sep/2016 04:34:11] "GET /static/img/slide3.jpg HTTP/1.1" 200 94809
+[30/Sep/2016 04:34:17] "GET /static/img/slide2.jpg HTTP/1.1" 200 807157
+[30/Sep/2016 04:34:19] "GET /favicon.ico HTTP/1.1" 301 0
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:19] "GET /favicon.ico/ HTTP/1.1" 500 82420
+[30/Sep/2016 04:34:22] "GET / HTTP/1.1" 200 9101
+[30/Sep/2016 04:34:22] "GET /static/css/customer.css HTTP/1.1" 304 0
+[30/Sep/2016 04:34:22] "GET /static/js/customer.js HTTP/1.1" 304 0
+[30/Sep/2016 04:34:22] "GET /static/img/BNU-logo.png HTTP/1.1" 304 0
+[30/Sep/2016 04:34:22] "GET /static/img/blank_slider.png HTTP/1.1" 304 0
+[30/Sep/2016 04:34:22] "GET /static/img/slide1.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:22] "GET /static/img/slide2.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:22] "GET /static/img/slide3.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:22] "GET /favicon.ico HTTP/1.1" 301 0
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:23] "GET /favicon.ico/ HTTP/1.1" 500 82681
+[30/Sep/2016 04:34:23] "GET / HTTP/1.1" 200 9101
+[30/Sep/2016 04:34:23] "GET /static/css/customer.css HTTP/1.1" 304 0
+[30/Sep/2016 04:34:23] "GET /static/js/customer.js HTTP/1.1" 304 0
+[30/Sep/2016 04:34:23] "GET /static/img/BNU-logo.png HTTP/1.1" 304 0
+[30/Sep/2016 04:34:23] "GET /static/img/blank_slider.png HTTP/1.1" 304 0
+[30/Sep/2016 04:34:23] "GET /static/img/slide1.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:23] "GET /static/img/slide2.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:23] "GET /static/img/slide3.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:23] "GET /favicon.ico HTTP/1.1" 301 0
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:24] "GET /favicon.ico/ HTTP/1.1" 500 82681
+[30/Sep/2016 04:34:24] "GET / HTTP/1.1" 200 9101
+[30/Sep/2016 04:34:24] "GET /static/css/customer.css HTTP/1.1" 304 0
+[30/Sep/2016 04:34:24] "GET /static/js/customer.js HTTP/1.1" 304 0
+[30/Sep/2016 04:34:24] "GET /static/img/BNU-logo.png HTTP/1.1" 304 0
+[30/Sep/2016 04:34:24] "GET /static/img/blank_slider.png HTTP/1.1" 304 0
+[30/Sep/2016 04:34:24] "GET /static/img/slide1.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:24] "GET /static/img/slide2.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:24] "GET /static/img/slide3.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:24] "GET /favicon.ico HTTP/1.1" 301 0
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:24] "GET /favicon.ico/ HTTP/1.1" 500 82681
+[30/Sep/2016 04:34:25] "GET / HTTP/1.1" 200 9101
+[30/Sep/2016 04:34:25] "GET /static/css/customer.css HTTP/1.1" 304 0
+[30/Sep/2016 04:34:25] "GET /static/js/customer.js HTTP/1.1" 304 0
+[30/Sep/2016 04:34:25] "GET /static/img/BNU-logo.png HTTP/1.1" 304 0
+[30/Sep/2016 04:34:25] "GET /static/img/blank_slider.png HTTP/1.1" 304 0
+[30/Sep/2016 04:34:25] "GET /static/img/slide1.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:25] "GET /static/img/slide2.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:25] "GET /static/img/slide3.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:25] "GET /favicon.ico HTTP/1.1" 301 0
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:25] "GET /favicon.ico/ HTTP/1.1" 500 82681
+[30/Sep/2016 04:34:29] "GET / HTTP/1.1" 200 9101
+[30/Sep/2016 04:34:29] "GET /static/css/customer.css HTTP/1.1" 304 0
+[30/Sep/2016 04:34:29] "GET /static/js/customer.js HTTP/1.1" 304 0
+[30/Sep/2016 04:34:29] "GET /static/img/BNU-logo.png HTTP/1.1" 304 0
+[30/Sep/2016 04:34:29] "GET /static/img/blank_slider.png HTTP/1.1" 304 0
+[30/Sep/2016 04:34:29] "GET /static/img/slide1.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:29] "GET /static/img/slide2.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:29] "GET /static/img/slide3.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:29] "GET /favicon.ico HTTP/1.1" 301 0
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:29] "GET /favicon.ico/ HTTP/1.1" 500 82680
+[30/Sep/2016 04:34:30] "GET / HTTP/1.1" 200 9101
+[30/Sep/2016 04:34:30] "GET /static/css/customer.css HTTP/1.1" 304 0
+[30/Sep/2016 04:34:30] "GET /static/js/customer.js HTTP/1.1" 304 0
+[30/Sep/2016 04:34:30] "GET /static/img/BNU-logo.png HTTP/1.1" 304 0
+[30/Sep/2016 04:34:30] "GET /static/img/blank_slider.png HTTP/1.1" 304 0
+[30/Sep/2016 04:34:30] "GET /static/img/slide1.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:30] "GET /static/img/slide3.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:30] "GET /static/img/slide2.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:34:30] "GET /favicon.ico HTTP/1.1" 301 0
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:30] "GET /favicon.ico/ HTTP/1.1" 500 82680
+[30/Sep/2016 04:34:31] "GET /introduction/ HTTP/1.1" 200 8251
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:32] "GET /favicon.ico/ HTTP/1.1" 500 82433
+[30/Sep/2016 04:34:32] "GET / HTTP/1.1" 200 9101
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:33] "GET /favicon.ico/ HTTP/1.1" 500 82420
+[30/Sep/2016 04:34:34] "GET /teaching/ HTTP/1.1" 200 6564
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:34] "GET /favicon.ico/ HTTP/1.1" 500 82429
+[30/Sep/2016 04:34:35] "GET /direction/ HTTP/1.1" 200 7874
+[30/Sep/2016 04:34:35] "GET /static/img/direction1.jpg HTTP/1.1" 200 21141
+[30/Sep/2016 04:34:35] "GET /static/img/direction2.jpg HTTP/1.1" 200 84076
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:35] "GET /favicon.ico/ HTTP/1.1" 500 82430
+[30/Sep/2016 04:34:37] "GET /paper/ HTTP/1.1" 200 15520
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:37] "GET /favicon.ico/ HTTP/1.1" 500 82426
+[30/Sep/2016 04:34:38] "GET / HTTP/1.1" 200 9101
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:39] "GET /favicon.ico/ HTTP/1.1" 500 82420
+[30/Sep/2016 04:34:39] "GET /introduction/ HTTP/1.1" 200 8251
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:40] "GET /favicon.ico/ HTTP/1.1" 500 82433
+[30/Sep/2016 04:34:42] "GET /activity/ HTTP/1.1" 200 7035
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:43] "GET /favicon.ico/ HTTP/1.1" 500 82428
+[30/Sep/2016 04:34:43] "GET /teaching/ HTTP/1.1" 200 6564
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:44] "GET /favicon.ico/ HTTP/1.1" 500 82429
+[30/Sep/2016 04:34:44] "GET / HTTP/1.1" 200 9101
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:44] "GET /favicon.ico/ HTTP/1.1" 500 82420
+[30/Sep/2016 04:34:45] "GET /introduction/ HTTP/1.1" 200 8251
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:45] "GET /favicon.ico/ HTTP/1.1" 500 82433
+[30/Sep/2016 04:34:46] "GET /news/ HTTP/1.1" 200 5511
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:47] "GET /favicon.ico/ HTTP/1.1" 500 82425
+[30/Sep/2016 04:34:47] "GET /teaching/ HTTP/1.1" 200 6564
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:48] "GET /favicon.ico/ HTTP/1.1" 500 82429
+[30/Sep/2016 04:34:50] "GET / HTTP/1.1" 200 9101
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:34:50] "GET /favicon.ico/ HTTP/1.1" 500 82420
+[30/Sep/2016 04:35:08] "GET / HTTP/1.1" 200 9101
+[30/Sep/2016 04:35:09] "GET /static/js/customer.js HTTP/1.1" 304 0
+[30/Sep/2016 04:35:09] "GET /static/css/customer.css HTTP/1.1" 304 0
+[30/Sep/2016 04:35:09] "GET /static/img/BNU-logo.png HTTP/1.1" 304 0
+[30/Sep/2016 04:35:09] "GET /static/img/blank_slider.png HTTP/1.1" 304 0
+[30/Sep/2016 04:35:09] "GET /static/img/slide1.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:35:09] "GET /static/img/slide2.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:35:09] "GET /static/img/slide3.jpg HTTP/1.1" 304 0
+[30/Sep/2016 04:35:09] "GET /favicon.ico HTTP/1.1" 301 0
+Internal Server Error: /favicon.ico/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/alidata/www/seclab/seclab/views.py", line 11, in page
+    return render(request, 'seclab/page/' + slug + '.html')
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: seclab/page/favicon.ico.html
+[30/Sep/2016 04:35:09] "GET /favicon.ico/ HTTP/1.1" 500 82680

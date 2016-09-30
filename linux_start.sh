@@ -1,7 +1,7 @@
 echo ===================================================
 echo =============  DELETE OLD DATABASE  ===============
 echo ===================================================
-if [ -f "db.sqlite3"] 
+if [ -f "db.sqlite3" ]; 
 	then rm db.sqlite3
 fi
 
@@ -54,4 +54,4 @@ echo
 echo ===================================================
 echo ===================  RUN SERVER  ==================
 echo ===================================================
-nohup python manage.py runserver 0.0.0.0:8080 > /alidata/www/seclab_log &
+nohup python manage.py runserver 0.0.0.0:8080 &
