@@ -527,3 +527,4 @@ Traceback (most recent call last):
     raise TemplateDoesNotExist(template_name, chain=chain)
 TemplateDoesNotExist: seclab/page/favicon.ico.html
 [30/Sep/2016 04:35:09] "GET /favicon.ico/ HTTP/1.1" 500 82680
+Error: That port is already in use.
