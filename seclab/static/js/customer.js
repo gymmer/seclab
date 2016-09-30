@@ -36,4 +36,16 @@ $(document).ready(function()
 			$(this).animate({left:'0px',fontSize:'20px'},'fast');
 			console.log("2")
 		})
+
+	$('#homeSlider').hover(
+		function()
+		{
+			$('.carousel-control').fadeIn('fast')
+		},
+		function()
+		{
+			$('.carousel-control').fadeOut('fast')
+		})
+
+	$('.img_0').addClass('active')	//首页轮播，默认是最先使第一张图片(id=0)active
 })

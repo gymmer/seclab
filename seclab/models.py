@@ -2,8 +2,13 @@
 from __future__ import unicode_literals
 
 from django.db import models
-from django.core.urlresolvers import reverse
+from django.core.urlresolvers import reverse 
 # Create your models here.
+
+
+# 本文件中，用__unicode__代替了__str__，以免在admin界面中显示中文而引发错误。
+# 参考：http://blog.csdn.net/jiangnanandi/article/details/3574007
+# 或者另一个解决方案：http://blog.sina.com.cn/s/blog_63cf1c510101an74.html
 
 
 class FatherMenu(models.Model):
@@ -16,7 +21,7 @@ class FatherMenu(models.Model):
         verbose_name = u"一级菜单"
         verbose_name_plural = u"一级菜单"
 
-    def __str__(self):
+    def __unicode__(self):
         return self.title
 
 
@@ -31,7 +36,7 @@ class SonMenu(models.Model):
         verbose_name = u"二级菜单"
         verbose_name_plural = u"二级菜单"
 
-    def __str__(self):
+    def __unicode__(self):
         return self.title
 
 
@@ -46,7 +51,7 @@ class Img(models.Model):
         verbose_name = u"图片"
         verbose_name_plural = u"图片"
 
-    def __str__(self):
+    def __unicode__(self):
         return self.slug
 
 
@@ -62,5 +67,5 @@ class Article(models.Model):
         verbose_name = u"文章"
         verbose_name_plural = u"文章"
 
-    def __str__(self):
+    def __unicode__(self):
         return self.title
