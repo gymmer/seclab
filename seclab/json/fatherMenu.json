@@ -5,7 +5,7 @@
 		"fields":
 		{
 			"title":"首页",
-			"slug":"/seclab/",
+			"slug":"/",
 			"son":0
 		}
 	},
@@ -15,7 +15,7 @@
 		"fields":
 		{
 			"title":"实验室概况",
-			"slug":"/seclab/introduction/",
+			"slug":"/introduction/",
 			"son":0
 		}
 	},
@@ -25,7 +25,7 @@
 		"fields":
 		{
 			"title":"实验室动态",
-			"slug":"/seclab/dynamic/",
+			"slug":"/dynamic/",
 			"son":1
 		}
 	},
@@ -35,7 +35,7 @@
 		"fields":
 		{
 			"title":"教学工作",
-			"slug":"/seclab/teaching/",
+			"slug":"/teaching/",
 			"son":0
 		}
 	},
@@ -45,7 +45,7 @@
 		"fields":
 		{
 			"title":"研究方向",
-			"slug":"/seclab/direction/",
+			"slug":"/direction/",
 			"son":0
 		}
 	},
@@ -55,7 +55,7 @@
 		"fields":
 		{
 			"title":"团队成员",
-			"slug":"/seclab/member/",
+			"slug":"/member/",
 			"son":1
 		}
 	},
@@ -65,7 +65,7 @@
 		"fields":
 		{
 			"title":"科研项目",
-			"slug":"/seclab/project/",
+			"slug":"/project/",
 			"son":1
 		}
 	},
@@ -75,7 +75,7 @@
 		"fields":
 		{
 			"title":"研究成果",
-			"slug":"/seclab/achievement/",
+			"slug":"/achievement/",
 			"son":1
 		}
 	}

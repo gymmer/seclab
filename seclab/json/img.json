@@ -1,18 +1,6 @@
 [
 	{
 		"model":"seclab.Img",
-		"pk":1,
-		"fields":
-		{
-			"tag":"navLogo",
-			"tagId":0,
-			"intro":"导航栏的LOGO",
-			"title":"BNU-LOGO",
-			"slug":"/static/img/BNU-logo.png"		
-		}
-	},
-	{
-		"model":"seclab.Img",
 		"pk":2,
 		"fields":
 		{

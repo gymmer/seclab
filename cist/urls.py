@@ -20,9 +20,7 @@ import seclab.views as seclab_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^seclab/$', seclab_views.index),
-    url(r'^seclab/(?P<slug>[^/]+)/$', seclab_views.page),
-    url(r'^seclab/article/(?P<pk>\d+)/$', seclab_views.article),
-    url(r'^static/(?P<path>.*)', 'django.views.static.serve',
-        {'document_root': 'C:/Users/My402/cist/seclab/static'}),
+    url(r'^$', seclab_views.index),
+    url(r'^(?P<slug>[^/]+)/$', seclab_views.page),
+    url(r'^article/(?P<pk>\d+)/$', seclab_views.article),
 ]

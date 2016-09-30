@@ -5,7 +5,7 @@
 		"fields":
 		{
 			"title":"科研活动",
-			"slug":"/seclab/activity/",
+			"slug":"/activity/",
 			"father":3
 		}
 	},
@@ -15,7 +15,7 @@
 		"fields":
 		{
 			"title":"实验室新闻",
-			"slug":"/seclab/news/",
+			"slug":"/news/",
 			"father":3
 		}
 	},
@@ -25,7 +25,7 @@
 		"fields":
 		{
 			"title":"教师",
-			"slug":"/seclab/teacher/",
+			"slug":"/teacher/",
 			"father":6
 		}
 	},
@@ -35,7 +35,7 @@
 		"fields":
 		{
 			"title":"学生",
-			"slug":"/seclab/student/",
+			"slug":"/student/",
 			"father":6
 		}
 	},
@@ -45,7 +45,7 @@
 		"fields":
 		{
 			"title":"在研项目",
-			"slug":"/seclab/ing/",
+			"slug":"/ing/",
 			"father":7
 		}
 	},
@@ -55,7 +55,7 @@
 		"fields":
 		{
 			"title":"完成项目",
-			"slug":"/seclab/ed/",
+			"slug":"/ed/",
 			"father":7
 		}
 	},
@@ -65,7 +65,7 @@
 		"fields":
 		{
 			"title":"文章",
-			"slug":"/seclab/paper/",
+			"slug":"/paper/",
 			"father":8
 		}
 	},
@@ -75,7 +75,7 @@
 		"fields":
 		{
 			"title":"专利",
-			"slug":"/seclab/patent/",
+			"slug":"/patent/",
 			"father":8
 		}
 	},
@@ -85,7 +85,7 @@
 		"fields":
 		{
 			"title":"其他",
-			"slug":"/seclab/other/",
+			"slug":"/other/",
 			"father":8
 		}
 	}

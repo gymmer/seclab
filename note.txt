@@ -1,2 +1,2 @@
-superuser:root
+superuser:admin
 passworder:seclab402
