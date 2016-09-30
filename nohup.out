@@ -528,3 +528,14 @@ Traceback (most recent call last):
 TemplateDoesNotExist: seclab/page/favicon.ico.html
 [30/Sep/2016 04:35:09] "GET /favicon.ico/ HTTP/1.1" 500 82680
 Error: That port is already in use.
+Error: That port is already in use.
+Not Found: /http:/www.baidu.com/
+[30/Sep/2016 07:54:34] "GET http://www.baidu.com/?rands=_488664836021268801898680 HTTP/1.0" 404 1692
+Not Found: /http:/50.117.47.15:28712/
+[30/Sep/2016 07:54:44] "GET http://50.117.47.15:28712/?rands=_234665001012424321562772 HTTP/1.0" 404 1712
+Not Found: /http:/123.249.29.201:43210/
+[30/Sep/2016 07:54:45] "GET http://123.249.29.201:43210/?rands=_522943504021485911687680 HTTP/1.0" 404 1720
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[30/Sep/2016 07:54:46] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1729
+Not Found: /http:/50.117.86.106/
+[30/Sep/2016 07:54:46] "GET http://50.117.86.106/?rands=_55304556161987788763840 HTTP/1.0" 404 1691
