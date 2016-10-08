@@ -1,12 +1,79 @@
 {% extends "seclab/page.html" %}
 
 {% block page_content %}
-	<h3>硕士生</h3>
-	<strong>2015级</strong><br>魏伟 高岩 王星 潘敏瑜<br>
-	<strong>2014级</strong><br>张艳 邹鸿渐 邹金蓉<br>
-	<strong>2013级</strong><br>宋黎丽 余小燕 惠德彬 苏兵<br>
-	<h3>博士生</h3>
-	<strong>2015级</strong><br>徐凌<br>
-	<h3>留学生</h3>
-	<strong>2015级</strong><br>何飞<br>
+<div class="panel-group" id="intro-accordion">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="my-panel-header">
+				<a href="#master" data-toggle="collapse">硕士生</a>
+			</div>			
+		</div>
+		<div id="master" class="panel-collapse collapse in">
+			<div class="panel-body">				
+				<div class="my-panel-content">
+					<ul class="home-intro-list">
+						<li>
+							<span class="glyphicon glyphicon-arrow-right "><span>&nbsp;
+							<strong>2015级：</strong>魏伟 高岩 王星 潘敏瑜
+						</li>
+						<li>
+							<span class="glyphicon glyphicon-arrow-right "><span>&nbsp;
+							<strong>2014级：</strong>张艳 邹鸿渐 邹金蓉
+						</li>
+						<li>
+							<span class="glyphicon glyphicon-arrow-right "><span>&nbsp;
+							<strong>2013级：</strong>宋黎丽 余小燕 惠德彬 苏兵
+						</li>
+						<li>
+							<span class="glyphicon glyphicon-arrow-right "><span>&nbsp;
+							<strong>2012级：</strong>于文秋
+						</li>
+					</ul>
+				</div>			
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="my-panel-header">
+				<a href="#docter" data-toggle="collapse">博士生</a>
+			</div>			
+		</div>
+		<div id="docter" class="panel-collapse collapse in">
+			<div class="panel-body">				
+				<div class="my-panel-content">
+					<ul class="home-intro-list">
+						<li>
+							<span class="glyphicon glyphicon-arrow-right "><span>&nbsp;
+							<strong>2015级：</strong>徐凌
+						</li>
+					</ul>					
+				</div>			
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="my-panel-header">
+				<a href="#foreigner" data-toggle="collapse">留学生</a>
+			</div>			
+		</div>
+		<div id="foreigner" class="panel-collapse collapse in">
+			<div class="panel-body">				
+				<div class="my-panel-content">
+					<ul class="home-intro-list">
+						<li>
+							<span class="glyphicon glyphicon-arrow-right "><span>&nbsp;
+							<strong>2015级：</strong>何飞
+						</li>
+					</ul>					
+				</div>			
+			</div>
+		</div>
+	</div>
+
+</div>
+
 {% endblock page_content %}

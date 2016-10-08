@@ -1,8 +1,95 @@
 {% extends "seclab/page.html" %}
 
 {% block page_content %}
-	<ul>
-		<li>综合信息安全管理控制系统，总装备部，2006-2007</li>
-		<li>局域网信息安全系统，国家保密所，2006-2007</li>
-	</ul>
+
+<div class="panel-group" id="intro-accordion">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="my-panel-header">
+				<a href="#ed-project-1" data-toggle="collapse">综合信息安全管理控制系统</a>
+			</div>
+		</div>
+		<div id="ed-project-1" class="panel-collapse collapse">
+			<div class="panel-body">
+				<div class="my-panel-content">
+					<p>
+						<strong>总装备部</strong>
+						&nbsp;&nbsp;2006-2007
+					</p>
+				</div>				
+			</div>
+		</div>
+	</div>
+	
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="my-panel-header">
+				<a href="#ed-project-2" data-toggle="collapse">局域网信息安全系统</a>
+			</div>			
+		</div>
+		<div id="ed-project-2" class="panel-collapse collapse">
+			<div class="panel-body">				
+				<div class="my-panel-content">
+					<p>
+						<strong>国家保密所</strong>
+						&nbsp;&nbsp;2006-2007
+					</p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					计算机局域网是内部涉密信息传播的主要途径，其信息的安全性问题比互联网信息的安全性问题更为突出和严峻，为此，我们承担了国家保密技术所课题：局域网信息安全系统。<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					本课题针对异构局域网环境的安全控制，对局域网的信息安全问题进行了深入研究，研制了异构局域网安全控制系统。该系统具有平台无关、安全身份认证、部署灵活、可扩展等良好特性。主要包括一站式Web认证、Linux/Windows环境网格指纹身份认证、客户机端口控制和进程控制、C/S与B/S模式融合设计等部分。其中的指纹身份认证与登陆、Web认证服务，采用了Kerberos认证协议的流程并加入了公钥加密和指纹认证，将C/S与B/S的身份认证有机地结合起来，能够为符合协议的任何应用提供高安全度可靠身份认证服务，为未来局域网内身份认证和网络服务登陆开辟了一个新途径。<br>
+					<div class="row">
+						<div class="col-md-8 col-sm-8 col-xs-8">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<strong>该系统可应用于：</strong>
+							<ul>
+								<li>
+									在身份认证方面，将指纹识别与Linux/Windows/Web的登录系统有机地结合起来，实现高安全的身份认证协议。对于增强目前操作系统和网格服务用户身份认证的安全性具有重要价值和广阔的应用前景。
+								</li>
+								<li>
+									在主机控制方面，采用操作系统的底层核心技术，实现了对诸多常见外设的按需控制，以及对开放端口的使用情况进行审计，有效地消除了涉密信息通过各种传输媒质非法向外界扩散的安全隐患。
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<img class="img-responsive" src="/static/img/ed-project1.jpg">
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="my-panel-header">
+				<a href="#ed-project-3" data-toggle="collapse">涉密移动存储管理控制系统</a>
+			</div>			
+		</div>
+		<div id="ed-project-3" class="panel-collapse collapse">
+			<div class="panel-body">				
+				<div class="my-panel-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					《涉密移动存储管理控制系统》旨在提高内部网络文件的安全防护及管理能力，对涉密电子文件进行集中存储、统一管理和全程监控，保证涉密电子文件在输入、输出过程中的可控性和可追踪性，具有自动身份认证、文件操作日志生成与自动上传、非法操作警示、适用范围设置、文件定密、文件输出控制（电子签批）等功能。<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					该系统由管理控制平台、电子文件审批系统（文件定密、电子签批）和客户端的涉密移动存储介质组成，其中，管理控制平台是《涉密移动存储管理控制系统》的管理控制中心，由涉密员或涉密文件管理员负责操作管理。该平台包含了管理员模块和审计员模块，可实现对涉密移动存储介质的注册、注销、设置、修改、文件操作日志的查询等管理审计功能；电子文件审批系统包括文件定密和电子签批，可实现用户文件密级的审定和输出控制；涉密移动存储设备，实现对涉密文件的指纹身份认证、文件跟踪和拷贝控制等核心功能。<br>
+					<div class="row">
+						<div class="col-md-8 col-sm-8 col-xs-8">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<strong>该系统可应用于：</strong>
+							<ul>
+								<li>
+									内部网络系统（包括有盘系统和无盘系统）移动存储设备的管理控制，以及对移动存储设备在内外网中进行文件操作的审批、加密、控制和追踪，有效地解决了移动存储介质的安全问题，在国防、政府等涉密领域具有广泛的应用价值。
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<img class="img-responsive" src="/static/img/ed-project2.jpg">
+						</div>	
+					</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+</div>
 {% endblock page_content %}
