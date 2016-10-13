@@ -1,3 +1,4 @@
 *.pyc
 nohup.out
 db.sqlite3
+.project
